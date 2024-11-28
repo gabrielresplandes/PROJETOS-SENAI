@@ -58,10 +58,10 @@ main {
 
 form {
     background-color: white;
-    padding: 20px;
+    padding: 15px; /* Reduzido para um espaço menor */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 350px; /* Reduzido de 400px para 350px */
     margin: 0 auto;
 }
 
@@ -79,14 +79,31 @@ input {
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    background-color:rgb(57, 105, 163);
+    width: auto;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, rgba(57, 105, 163, 1) 0%, rgba(28, 78, 128, 1) 100%);
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, rgba(28, 78, 128, 1) 0%, rgba(57, 105, 163, 1) 100%);
+}
+
 
 button:hover {
     background-color: #dbd8d7;
@@ -99,11 +116,35 @@ ul {
 }
 
 li {
-    background-color: white;
+    background: #f9f9f9; /* Fundo mais suave */
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Alinha texto e botão em lados opostos */
+    align-items: center; /* Centraliza o botão verticalmente */
+}
+
+li .reserva-info {
+    font-size: 14px; /* Reduzido para dar mais espaço visual */
+    color: #333; /* Contraste melhor */
+    line-height: 1.4; /* Aumenta a legibilidade */
+}
+
+li button {
+    background: #ff6b6b; /* Cor chamativa para "Dar Baixa" */
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px; /* Botão menor */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+li button:hover {
+    background: #e63946; /* Escurece ao passar o mouse */
 }
 
 @media (max-width: 600px) {

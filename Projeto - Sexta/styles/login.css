@@ -1,13 +1,17 @@
 body {
-    align-items: center;
-    background-color:#dbd8d7;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
+  align-items: center;
+  background-image: url('../images/fundo_intranet.jpg'); /* Substitua pelo caminho correto da imagem escurecida */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0; /* Remove margens externas */
+}
+
   
   .form {
-    background-color:rgb(57, 105, 163);
+    background-color:rgba(100, 100, 100, 0.7);
     border-radius: 20px;
     box-sizing: border-box;
     height: 500px;
@@ -61,7 +65,7 @@ body {
   }
   
   .cut {
-    background-color:rgb(57, 105, 163);
+    background-color:rgba(100, 100, 100, );
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -82,7 +86,7 @@ body {
   }
   
   .placeholder {
-    color: #65657b;
+    color: #fdfdfd;
     font-family: sans-serif;
     left: 20px;
     line-height: 14px;
@@ -107,7 +111,7 @@ body {
   }
   
   .submit {
-    background-color: #08d;
+    background-color:#68916a;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
@@ -120,9 +124,10 @@ body {
     text-align: center;
     width: 100%;
   }
-  
+
+
   .submit:active {
-    background-color: #06b;
+    background-color: #394d3a;;
   }
 
 

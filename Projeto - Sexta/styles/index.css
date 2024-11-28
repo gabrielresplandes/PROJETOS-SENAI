@@ -6,24 +6,38 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #dbd8d7;
+    background-image: url('../images/imagem_fundo_index.jpg') ; 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    color: #fff; 
+    position: relative;
 }
+
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(57, 105, 163);
+    background-color:  rgba(0, 0, 0, 0.5);
     color: white;
     padding: 15px;
-    
+    }
+.boas-vindas    {
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto; 
+    color: white; 
 }
 
 .header-content {
     text-align: left;
     flex-grow: 2;
+
 }
 
 header img {
@@ -32,10 +46,10 @@ header img {
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -44,17 +58,15 @@ nav a:hover {
 
 h1 {
     font-size: 1.5rem;
+    color: white;
+    
+    
 }
 
 p {
     margin-top: 5px;
     font-size: 1.2rem;
     color: #fff;
-}
-
-main {
-    padding: 30px;
-    text-align: center;
 }
 
 #catalogo {
@@ -72,14 +84,15 @@ main {
 }
 
 .produto {
-    background-color: white;
+    background-color:rgba(100, 100, 100, 0.9);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 15px;
     text-align: center;
     max-width: 250px;
     transition: transform 0.3s;
 }
+
 
 .produto:hover {
     transform: scale(1.05);
@@ -97,18 +110,18 @@ main {
 
 .produto p {
     font-size: 14px;
-    color: #666;
+    color: #ffffff;
     margin: 10px 0;
 }
 
 .produto h2 {
     font-size: 22px;
-    color: #4CAF50;
+    color: #ffffff;
     margin: 10px 0;
 }
 
 .produto button {
-    background-color: #FF5722;
+    background-color: #68916a;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -119,13 +132,13 @@ main {
 }
 
 .produto button:hover {
-    background-color: #E64A19;
+    background-color: #394d3a;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgb(57, 105, 163);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: fixed;
     bottom: 0;
