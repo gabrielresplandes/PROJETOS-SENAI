@@ -5,10 +5,18 @@ document.getElementById('reserva-form').addEventListener('submit', function (eve
     const dias = parseInt(document.getElementById('dias').value);
     const valorDiaria = parseFloat(document.getElementById('valorDiaria').value);
 
+    // Validação para aceitar apenas letras e espaços
+    const nomeRegex = /^[a-zA-ZÀ-ÿ\s]+$/;
+    if (!nomeRegex.test(cliente)) {
+        alert('O nome do cliente deve conter apenas letras e espaços.');
+        return;
+    }
+
     if (dias <= 0) {
         alert('A quantidade de dias deve ser maior que zero.');
         return;
     }
+
     if (valorDiaria <= 0) {
         alert('O valor da diária deve ser maior que zero.');
         return;
@@ -43,6 +51,6 @@ document.getElementById('reserva-form').addEventListener('submit', function (eve
 
         listaReservas.appendChild(novaReserva);
     }
-    
+
     document.getElementById('reserva-form').reset();
 });

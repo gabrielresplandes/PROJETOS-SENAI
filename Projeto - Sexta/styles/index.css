@@ -135,6 +135,138 @@ p {
     background-color: #394d3a;
 }
 
+.promocao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.9);
+    color: white;
+    padding: 40px;
+    margin: 30px auto;
+    border-radius: 8px;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.promocao-texto {
+    max-width: 600px;
+    flex: 1;
+}
+
+.promocao-texto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.promocao-texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.promocao-texto button {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.promocao-texto button:hover {
+    background-color: #333;
+}
+
+.promocao-imagem img {
+    max-width: 300px; /* Define um tamanho menor para a imagem */
+    border-radius: 8px; /* Mantém as bordas arredondadas */
+    flex: 1;
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante alinhamento central */
+}
+
+.reserva {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    color: #fff; /* Texto em branco */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 800px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.reserva-info {
+    flex: 1;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.reserva-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reserva-logo {
+    max-width: 70px; /* Tamanho da logo ajustado */
+    height: auto;
+}
+
+.reserva h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #fff; /* Nome do hotel em branco */
+    text-transform: uppercase;
+}
+
+.reserva ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.reserva ul li {
+    margin: 5px 0;
+}
+
+.reserva-acao {
+    flex: 1;
+    text-align: center; /* Centraliza o botão e o título */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-acao h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.reserva button {
+    background-color: #68916a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.reserva button:hover {
+    background-color: #394d3a;
+}
+
 footer {
     text-align: center;
     padding: 10px;
