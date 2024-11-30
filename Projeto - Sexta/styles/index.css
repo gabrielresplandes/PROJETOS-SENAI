@@ -59,8 +59,6 @@ nav a:hover {
 h1 {
     font-size: 1.5rem;
     color: white;
-    
-    
 }
 
 p {
@@ -182,22 +180,39 @@ p {
     background-color: #333;
 }
 
+.button {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
 .promocao-imagem img {
-    max-width: 300px; /* Define um tamanho menor para a imagem */
-    border-radius: 8px; /* Mantém as bordas arredondadas */
+    max-width: 300px;
+    border-radius: 8px;
     flex: 1;
-    margin: 0 auto; /* Centraliza a imagem */
-    display: block; /* Garante alinhamento central */
+    margin: 0 auto;
+    display: block;
 }
 
 .reserva {
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
-    color: #fff; /* Texto em branco */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
     padding: 30px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 30px auto;
     gap: 20px;
@@ -205,7 +220,7 @@ p {
 
 .reserva-info {
     flex: 1;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 .reserva-header {
@@ -216,14 +231,14 @@ p {
 }
 
 .reserva-logo {
-    max-width: 70px; /* Tamanho da logo ajustado */
+    max-width: 70px;
     height: auto;
 }
 
 .reserva h2 {
     font-size: 28px;
     margin: 0;
-    color: #fff; /* Nome do hotel em branco */
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -240,6 +255,7 @@ p {
 
 .reserva-acao {
     flex: 1;
+    background-color: #68916a;
     text-align: center; /* Centraliza o botão e o título */
     display: flex;
     flex-direction: column;
@@ -253,7 +269,6 @@ p {
 }
 
 .reserva button {
-    background-color: #68916a;
     color: white;
     padding: 10px 20px;
     border: none;
