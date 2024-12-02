@@ -136,19 +136,6 @@ Permite o cadastro, visualização e exclusão de reservas e inclui um botão de
 
 ---
 
-#### 6. Pontos de Melhorias
-
-- **Segurança:**
-  - Implementar autenticação segura no login (exemplo: hashing de senhas).
-- **Manutenção de Estado:**
-  - Adicionar persistência para reservas usando localStorage ou integração com backend.
-- **Acessibilidade Adicional:**
-  - Uso de `aria-labels` e descrição para navegação em leitores de tela.
-- **Modularização:**
-  - Dividir o código JavaScript em módulos para maior clareza e reutilização.
-
----
-
 ### Instruções
 
  - Ao realizar o acesso dos arquivos, acesse o live server pelo index.html
