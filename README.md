@@ -1,4 +1,4 @@
-# PROJETOS-SENAI
+# Projeto (Hotel Acapulco)
 ### *Hotel Acapulco - Website Oficial*
 ##### Para melhor acesso ao Website observe as instruções ao final dessa documentação
 
