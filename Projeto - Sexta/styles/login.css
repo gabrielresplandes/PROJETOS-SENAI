@@ -1,12 +1,12 @@
 body {
   align-items: center;
-  background-image: url('../images/fundo_intranet.jpg'); /* Substitua pelo caminho correto da imagem escurecida */
+  background-image: url('../images/fundo_intranet.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   height: 100vh;
-  margin: 0; /* Remove margens externas */
+  margin: 0;
 }
 
   
@@ -17,8 +17,8 @@ body {
     height: 500px;
     padding: 20px;
     width: 320px;
-    flex-direction: column; /* Alinhamento dos elementos dentro do formulário */
-    align-items: center; /* Centraliza os itens dentro do formulário */
+    flex-direction: column;
+    align-items: center;
   }
   
   .title {
@@ -129,13 +129,11 @@ body {
   .submit:active {
     background-color: #394d3a;;
   }
-
-
   
   img {
     align-items: center;
     width: 70px;
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Para evitar que a imagem afete o layout */
-    margin-bottom: 20px; /* Se você quiser adicionar algum espaço abaixo da imagem */
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
