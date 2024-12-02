@@ -52,6 +52,23 @@ p {
     color: #fff;
 }
 
+#logout-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #e63946;
+}
+
 main {
     margin-top: 20px;
 }

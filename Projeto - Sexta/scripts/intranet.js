@@ -54,3 +54,8 @@ document.getElementById('reserva-form').addEventListener('submit', function (eve
 
     document.getElementById('reserva-form').reset();
 });
+// Botão de logout
+document.getElementById('logout-btn').addEventListener('click', function () {
+    alert('Você será redirecionado para a página inicial.');
+    window.location.href = "../index.html"; // Redireciona para a página inicial
+});

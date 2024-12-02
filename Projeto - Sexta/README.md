@@ -1,95 +1,160 @@
 # PROJETOS-SENAI
 ### *Hotel Acapulco - Website Oficial*
-#### Projeto originalmente criado por Victor Silva e Gabriel Morais
-##### Para melhor acesso observe as instruções ao final dessa documentação
-
-*Objetivo*: O site visa apresentar as ofertas do hotel, permitir que os usuários conheçam os quartos e facilitem o processo de reserva, além de fornecer informações sobre o hotel.
-
-### *Estrutura do Projeto*
-
-O site é composto por várias páginas interligadas, cada uma com funcionalidades específicas. O projeto utiliza HTML, CSS e JavaScript para garantir uma experiência de usuário atraente e funcional.
-
-#### *Páginas principais*:
-1. *index.html* – Página inicial que apresenta o hotel, seus quartos, promoções e informações de contato.
-2. *login.html* – Página de login para os administradores ou usuários internos do hotel.
-3. *sobreNos.html* – Página sobre o hotel, destacando a história e missão da empresa.
-4. *formulario.html* – Página com um formulário para os visitantes realizarem suas reservas.
+##### Para melhor acesso ao Website observe as instruções ao final dessa documentação
 
 ---
 
-### *Estrutura de Pastas*
-
-- */images*: Contém todas as imagens usadas no site, como logotipos, fotos dos quartos e imagens promocionais.
-- */styles*: Contém os arquivos CSS que estilizam as páginas, como index.css, login.css, sobreNos.css.
-- */scripts*: Contém arquivos JavaScript (por exemplo, index.js) que são usados para funcionalidades dinâmicas no site.
+#### 1. Estrutura Geral
+O sistema é composto por múltiplas páginas HTML, estilizadas por arquivos CSS e com funcionalidades implementadas em JavaScript. Seu objetivo é representar o site de um hotel, com foco na experiência do usuário, funcionalidades administrativas e integração com formulários de terceiros.
 
 ---
 
-### *Descrição das Páginas*
+#### 2. Componentes do Sistema
 
-1. *index.html*:
-   - *Cabeçalho*: Contém o logo do hotel e links para as seções do site, incluindo a página inicial, a intranet e sobre nós.
-   - *Boas-vindas*: Apresenta uma mensagem de boas-vindas com um convite para se hospedar.
-   - *Catalogo Atualizado*: Exibe os quartos do hotel com descrições e preços.
-   - *Promoção "Seja um Cliente VIP"*: Incentiva o usuário a se cadastrar no programa VIP do hotel para receber vantagens exclusivas.
-   - *Reserva*: Exibe informações sobre como fazer uma reserva, incluindo o endereço, e-mail e telefone do hotel.
-   - *Rodapé*: Contém direitos autorais e informações adicionais do hotel.
+##### 2.1. Página Principal (index.html)
 
-2. *login.html*:
-   - Página de login para usuários internos do hotel, com uma interface simples e estilo moderno.
-   - A estrutura do formulário de login utiliza placeholders animados e um estilo limpo.
+**Descrição:** 
+Apresenta as informações iniciais sobre o hotel, incluindo um catálogo de quartos, promoções e a seção de reservas.
 
-3. *sobreNos.html*:
-   - Apresenta informações sobre o hotel, sua história, e missão.
-   - Inclui uma seção visual com imagens e texto explicativo sobre o hotel e seus valores.
+- **Seções Principais:**
+  - **Header:** Inclui o logotipo, nome do hotel e uma barra de navegação com links para outras páginas.
+  - **Catálogo de Quartos:** Mostra quatro tipos de acomodações disponíveis, cada uma com imagem, descrição, preço e botão "VER MAIS".
+  - **Promoção VIP:** Convida os usuários a se cadastrarem no programa de fidelidade.
+  - **Reservas:** Exibe as informações de contato do hotel e um botão para acessar o formulário de reservas.
+  - **Footer:** Contém informações de direitos autorais.
 
-4. *formulario.html*:
-   - Página de formulário de reservas, onde os usuários podem preencher seus dados e enviar para realizar a reserva no hotel.
+**Observações Técnicas:**
+- **Acessibilidade:** Uso do atributo `alt` em imagens para melhorar a acessibilidade.
+- **Responsividade:** Implementada para adaptar-se a diferentes tamanhos de tela com CSS Flexbox.
+- **JavaScript:** Função `scrollToSection(id)` usada para navegação suave entre seções.
 
 ---
 
-### *CSS*
+##### 2.2. Página "Sobre Nós" (sobreNos.html)
 
-Os arquivos CSS são usados para estilizar as páginas de forma a torná-las atraentes e fáceis de usar. Abaixo estão as características principais de cada arquivo CSS:
+**Descrição:**  
+Apresenta informações detalhadas sobre o hotel, incluindo histórico e descrição das acomodações.
 
-1. *index.css*:
-   - Define o layout responsivo do site.
-   - Estiliza os quartos e as seções de promoções com bordas arredondadas e transições suaves.
-   - Ajusta o estilo dos botões, imagens e textos para criar uma navegação intuitiva.
+- **Seções Principais:**
+  - **Introdução:** Breve história do hotel.
+  - **Detalhamento das Acomodações:** Destaca os diferenciais das acomodações.
 
-2. *login.css*:
-   - Estiliza a página de login, criando um formulário centralizado com campos interativos.
-   - Usa cores sóbrias com um fundo escurecido para a imagem de fundo.
-   - O botão de envio tem uma transição de cor suave e estilo de foco.
-
-3. *sobreNos.css*:
-   - Cria um layout flexível para a seção "Sobre nós", com uma imagem de destaque ao lado do texto.
-   - O cabeçalho e rodapé têm um fundo transparente escuro, mantendo o foco no conteúdo central.
-   - O estilo do texto é limpo e legível, com uma paleta de cores suave para o fundo e os textos.
+**JavaScript:**
+- Função `scrollToNext()` para rolar suavemente para a próxima seção.
 
 ---
 
-### *JavaScript*
+##### 2.3. Página de Login (login.html)
 
-*index.js*:
-   - **Função scrollToSection()**: Permite que o usuário navegue rapidamente entre as seções da página, como para ver mais detalhes dos quartos ou ir até o formulário de reserva.
-   - *Interatividade*: Controla a interação com os botões, como transições e efeitos visuais de hover.
+**Descrição:**
+Permite que os administradores acessem a intranet para gerenciar reservas.
+
+- **Funcionalidades:**
+  - Validação de usuário e senha.
+  - Redirecionamento para a página de intranet em caso de sucesso.
+  - Feedback para erros no login.
+
+**JavaScript:**
+- Validação do login com comparação de valores fixos (`validUser` e `validPassword`).
+
+**Estilização:**
+- Formulário centralizado com campos estilizados.
+- Foco nos campos para melhor experiência visual.
 
 ---
 
-### *Funcionalidades*
+##### 2.4. Página da Intranet (intranet.html)
 
-1. *Navegação Rápida*: A navegação entre seções do site é facilitada por botões e links no menu.
-2. *Página de Reserva*: Permite que os visitantes façam suas reservas diretamente através de um formulário simples.
-3. *Programa VIP*: Incentiva o visitante a se inscrever em um programa de fidelidade, oferecendo vantagens exclusivas.
-4. *Responsividade*: O layout é totalmente responsivo, garantindo uma boa experiência tanto em dispositivos móveis quanto em desktops.
+**Descrição:**  
+Permite o cadastro, visualização e exclusão de reservas e inclui um botão de logout para redirecionamento à página inicial.
+
+- **Funcionalidades:**
+   Cadastro de reservas com validação de campos:
+      - Nome do cliente deve conter apenas letras e espaços.
+      - Dias e valor da diária devem ser maiores que zero.
+      - Atualização de reservas: Cálculo de valores acumulados
+      - Opção de "Dar Baixa" em reservas, removendo-as da lista.
+   
+   Logout:
+      - Botão de logout posicionado no **header**.
+      - Ao ser clicado, redireciona o usuário para a página inicial do site (index.html)
+
+      **JavaScript(logout)**
+      - Função associada ao botão **#logout-btn** que exibe um alerta ao usuário e redireciona para a página inicial
+
+**JavaScript:**
+- Manipulação dinâmica do DOM para exibir reservas.
+- Validação com regex para entrada de nomes.
+
+**Estilização:**
+- Formulário com design simples e acessível.
+- Lista de reservas estilizada com botões para exclusão.
 
 ---
 
-### *Considerações Finais*
+#### 3. Estilização
 
-Este projeto foi desenvolvido para ser uma plataforma simples e acessível para os clientes do Hotel Acapulco. A estrutura foi criada para ser facilmente mantida e expandida com novas funcionalidades no futuro.
+##### **Arquivos CSS:**
+- **index.css:** Focado na estilização da página principal. Inclui:
+  - Background com imagem fixa.
+  - Estilo das seções e elementos como botões e cards.
+- **sobreNos.css:** Configurações específicas para a página "Sobre Nós", com design clean e responsivo.
+- **login.css:** Estilo moderno para o formulário de login, com cores e layout atraentes.
+- **intranet.css:** Layout funcional para cadastro e exibição de reservas.
+
+**Técnicas de Estilização:**
+- Uso extensivo de `flexbox` para layout responsivo.
+- Paleta de cores consistente (tons de verde, preto e branco).
+- Transições suaves para botões e elementos interativos.
+
+---
+
+#### 4. Funcionalidades em JavaScript
+
+##### **4.1. Funções Utilizadas:**
+- **`scrollToSection(id)` e `scrollToNext()`**: Rolagem suave para melhorar a navegação.
+- **Validação de Formulários:**
+  - Uso de regex para garantir dados consistentes.
+- **Manipulação do DOM:** 
+  - Adição, atualização e exclusão de elementos como listas de reservas.
+- **Redirecionamento em Login:**
+  - `window.location.href` para navegação entre páginas.
+
+---
+
+#### 5. Boas Práticas Implementadas
+
+- **SEO:**
+  - Uso de meta tags como `viewport` e `charset`.
+  - Títulos específicos para cada página.
+- **Acessibilidade:**
+  - Textos alternativos (`alt`) em imagens.
+  - Cores contrastantes para melhor leitura.
+- **Código Limpo:**
+  - Identação correta e nomes de classes intuitivos.
+  - Separação de responsabilidades entre HTML, CSS e JavaScript.
+
+---
+
+#### 6. Pontos de Melhorias
+
+- **Segurança:**
+  - Implementar autenticação segura no login (exemplo: hashing de senhas).
+- **Manutenção de Estado:**
+  - Adicionar persistência para reservas usando localStorage ou integração com backend.
+- **Acessibilidade Adicional:**
+  - Uso de `aria-labels` e descrição para navegação em leitores de tela.
+- **Modularização:**
+  - Dividir o código JavaScript em módulos para maior clareza e reutilização.
+
+---
 
 ### Instruções
 
-Ao realizar o acesso dos arquivos, acesse o live server pelo index.html
+ - Ao realizar o acesso dos arquivos, acesse o live server pelo index.html
+
+ - Para acessar a intranet utilize o **login: admin** e a **senha: 12345**.
+
+## Créditos
+   - [@gabrielresplandes](https://github.com/gabrielresplandes) - Criador do projeto
+   - [@vitinhozy](https://github.com/vitinhozy) - Melhorias de interface e demais ajustes 
