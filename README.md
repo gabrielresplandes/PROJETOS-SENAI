@@ -143,6 +143,12 @@ Permite o cadastro, visualização e exclusão de reservas e inclui um botão de
 
 ---
 
+### Instruções
+
+- Ao realizar o acesso dos arquivos, acesse o live server pelo index.html
+
+ - Para acessar a intranet utilize o **login: admin** e a **senha: 12345**.
+
 ## **7. Créditos**
 
 - **[@gabrielresplandes](https://github.com/gabrielresplandes):** Criador do projeto.  
