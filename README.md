@@ -143,7 +143,7 @@ Permite o cadastro, visualização e exclusão de reservas e inclui um botão de
 
 ---
 
-## **7. Créditos 🙌**
+## **7. Créditos**
 
 - **[@gabrielresplandes](https://github.com/gabrielresplandes):** Criador do projeto.  
 - **[@vitinhozy](https://github.com/vitinhozy):** Melhorias de interface e ajustes gerais.
